@@ -4,10 +4,12 @@
 
 <div align="center">
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Sales-AI-Assistant?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Sales-AI-Assistant/stargazers)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **Curated List of SaaS Platforms & Open-Source GitHub Repositories for Revenue Operations, Lead Routing, CRM Synchronization & Agentic GTM Engines**
 
@@ -31,7 +33,9 @@ This repository tracks top-tier **commercial RevOps workflow orchestration platf
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Architecture & Integration Patterns](#%EF%B8%8F-architecture--integration-patterns)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [⚖️ Disclaimer & Privacy](#%EF%B8%8F-disclaimer--privacy)
+- [⭐ Star History](#-star-history)
 
 ---
 
@@ -178,8 +182,30 @@ Contributions are warmly welcomed! Help keep this RevOps ecosystem repository co
 
 ---
 
+## 💖 Support & Sponsorship
+
+Thank you for visiting and using this repository! If you find this curated RevOps workflow orchestration list helpful, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork & Share** with your network and revenue operations colleagues.
+- ☕ **Sponsor / Buy a Coffee**: Support ongoing updates and open-source curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutt00007).
+
+<div align="center">
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutt00007)
+
+</div>
+
+---
+
 ## ⚖️ Disclaimer & Privacy
 
 - ℹ️ **Community Curated**: This repository is a community-maintained curated index and does not imply official endorsement.
 - 🔐 **Data Privacy & Security**: RevOps workflows manage sensitive business pipeline data and PII. Ensure proper hardening, encryption, and compliance (GDPR, CCPA) when configuring self-hosted tools.
 - 🛡️ **Human-in-the-Loop Safety**: High-stakes revenue operations (email outreach, billing, contract dispatch) should incorporate explicit approval checks before execution.
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Revops-Workflow-Orchestration&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Revops-Workflow-Orchestration&type=date&legend=top-left)
