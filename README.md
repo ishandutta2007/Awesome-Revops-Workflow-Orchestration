@@ -67,7 +67,7 @@ This repository tracks top-tier **commercial RevOps workflow orchestration platf
 > 🌟 **Self-Hosted & Agentic Ecosystem**:  
 > The open-source RevOps sector ranges from high-throughput workflow engines to terminal-native AI SDRs and 17-agent GTM operating systems.
 
-### 🚀 Open-Source Repositories (Sorted by GitHub Stars_Count Descending)
+### 🚀 Open-Source Repositories (Sorted by GitHub_Stars_Count Descending)
 
 1. **[n8n](https://github.com/n8n-io/n8n)**  
    [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
