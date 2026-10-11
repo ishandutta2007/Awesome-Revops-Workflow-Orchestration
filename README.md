@@ -8,7 +8,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![GitHub Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Sales-AI-Assistant?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Sales-AI-Assistant/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Sales-AI-Assistant?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Sales-AI-Assistant/stargazers)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **Curated List of SaaS Platforms & Open-Source GitHub Repositories for Revenue Operations, Lead Routing, CRM Synchronization & Agentic GTM Engines**
@@ -67,70 +67,70 @@ This repository tracks top-tier **commercial RevOps workflow orchestration platf
 > 🌟 **Self-Hosted & Agentic Ecosystem**:  
 > The open-source RevOps sector ranges from high-throughput workflow engines to terminal-native AI SDRs and 17-agent GTM operating systems.
 
-### 🚀 Open-Source Repositories (Sorted by GitHub Star Count Descending)
+### 🚀 Open-Source Repositories (Sorted by GitHub Stars_Count Descending)
 
 1. **[n8n](https://github.com/n8n-io/n8n)**  
-   [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
    ⚡ **Fair-code workflow automation platform** — Build complex RevOps workflows, lead enrichment pipelines, CRM synchronization, and multi-app triggers with 400+ native integrations and node-based visual editing.
 
 2. **[Twenty CRM](https://github.com/twentyhq/twenty)**  
-   [![GitHub stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)  
    Modern open-source CRM alternative to Salesforce — Built with GraphQL, extensible data models, deal tracking, automated triggers, and full data sovereignty for revenue teams.
 
 3. **[Cal.com](https://github.com/calcom/cal.com)**  
-   [![GitHub stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers)  
    📅 **Open-source scheduling infrastructure** — Automate meeting routing, round-robin distribution, and inbound lead booking workflows integrated with your CRM stack.
 
 4. **[Apache Airflow](https://github.com/apache/airflow)**  
-   [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
    ⚙️ **Enterprise workflow management platform** — Programmatic DAG-based platform for complex revenue data ingestion, warehouse ETL pipelines, and revenue analytics orchestration.
 
 5. **[ERPNext](https://github.com/frappe/erpnext)**  
-   [![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)  
    💼 **Full-suite open-source ERP & CRM** — Integrates lead management, CPQ quoting, sales orders, invoicing, subscription billing, and revenue analytics in one Python/Frappe core.
 
 6. **[Activepieces](https://github.com/activepieces/activepieces)**  
-   [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
    🧩 **Open-source business automation & Zapier alternative** — No-code business automation and RevOps integration engine with self-hosting capabilities and custom TypeScript piece builder.
 
 7. **[Temporal](https://github.com/temporalio/temporal)**  
-   [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
    🛡️ **Durable execution platform** — Code-first microservice orchestration engine that guarantees workflow completion for mission-critical payment, billing, and CRM operations.
 
 8. **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)**  
-   [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)  
    🧾 **Open-source invoicing & quote engine** — Automates recurring revenue billing, client proposals, payment gateways, and real-time revenue analytics.
 
 9. **[Cadence](https://github.com/uber/cadence)**  
-   [![GitHub stars](https://img.shields.io/github/stars/uber/cadence?style=social&color=white)](https://github.com/uber/cadence/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/uber/cadence?style=social&color=white)](https://github.com/uber/cadence/stargazers)  
    🏢 **Fault-tolerant workflow orchestration engine from Uber** — Apache-2.0 licensed, stateful workflows in Go and Java built for enterprise scale and zero downtime.
 
 10. **[dagu](https://github.com/dagu-org/dagu)**  
-    [![GitHub stars](https://img.shields.io/github/stars/dagu-org/dagu?style=social&color=white)](https://github.com/dagu-org/dagu/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/dagu-org/dagu?style=social&color=white)](https://github.com/dagu-org/dagu/stargazers)  
     🪶 **Lightweight declarative workflow engine** — Simple alternative to Airflow and Cron using YAML DAG definitions, container execution, and web UI monitoring.
 
 11. **[SDRbot](https://github.com/NForce-ai/SDRbot)**  
-    [![GitHub stars](https://img.shields.io/github/stars/NForce-ai/SDRbot?style=social&color=white)](https://github.com/NForce-ai/SDRbot/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/NForce-ai/SDRbot?style=social&color=white)](https://github.com/NForce-ai/SDRbot/stargazers)  
     🤖 **Terminal-native RevOps agent** — Automates CRM tasks, prospect research, and sales outreach with your own API keys, local CLI operation, and MCP tool servers.
 
 12. **[RevenueOS](https://github.com/unempyd/revenueos)**  
-    [![GitHub stars](https://img.shields.io/github/stars/unempyd/revenueos?style=social&color=white)](https://github.com/unempyd/revenueos/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/unempyd/revenueos?style=social&color=white)](https://github.com/unempyd/revenueos/stargazers)  
     🤖 **Self-hosted revenue department for single businesses** — Approval-first AI workers for SEO audits, ads optimization, prospect discovery, and inbox management with measured outcomes.
 
 13. **[Synapse Agentic GTM OS](https://github.com/abdulfatiraziz/SynapseAgenticGTMOS)**  
-    [![GitHub stars](https://img.shields.io/github/stars/abdulfatiraziz/SynapseAgenticGTMOS?style=social&color=white)](https://github.com/abdulfatiraziz/SynapseAgenticGTMOS/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/abdulfatiraziz/SynapseAgenticGTMOS?style=social&color=white)](https://github.com/abdulfatiraziz/SynapseAgenticGTMOS/stargazers)  
     🧠 **17-agent AI organization for autonomous GTM** — Built on Google ADK and Vertex AI with Gemini 2.5 Flash, agent-to-agent delegation, RAG memory (`pgvector`), and Slack human-in-the-loop approvals.
 
 14. **[Lead-to-CRM Pipeline](https://github.com/SkyblyeAgency-Walid/lead-to-crm-pipeline)**  
-    [![GitHub stars](https://img.shields.io/github/stars/SkyblyeAgency-Walid/lead-to-crm-pipeline?style=social&color=white)](https://github.com/SkyblyeAgency-Walid/lead-to-crm-pipeline/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/SkyblyeAgency-Walid/lead-to-crm-pipeline?style=social&color=white)](https://github.com/SkyblyeAgency-Walid/lead-to-crm-pipeline/stargazers)  
     📊 **Lead cleaning and CRM sync system** — Google Sheets + Apps Script pipeline for lead extraction, title normalization, lead scoring (0-100), and search-before-create HubSpot sync.
 
 15. **[Sparkflow](https://github.com/ilya-shevelev/sparkflow)**  
-    [![GitHub stars](https://img.shields.io/github/stars/ilya-shevelev/sparkflow?style=social&color=white)](https://github.com/ilya-shevelev/sparkflow/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/ilya-shevelev/sparkflow?style=social&color=white)](https://github.com/ilya-shevelev/sparkflow/stargazers)  
     ⚡ **Distributed workflow orchestrator with Spark & Hadoop** — Lightweight Go alternative to Apache Airflow with native Spark/MapReduce executors and Raft leader election.
 
 16. **[Focal CRM Sales](https://github.com/focalcrm/focal)**  
-    [![GitHub stars](https://img.shields.io/github/stars/focalcrm/focal?style=social&color=white)](https://github.com/focalcrm/focal/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/focalcrm/focal?style=social&color=white)](https://github.com/focalcrm/focal/stargazers)  
     🚀 **Laravel revenue acceleration engine** — Multi-pipeline Kanban, stage-gate rules, CPQ quote generation, deal health scoring (0-100), and automated lead routing.
 
 ---
@@ -176,7 +176,7 @@ This repository tracks top-tier **commercial RevOps workflow orchestration platf
 Contributions are warmly welcomed! Help keep this RevOps ecosystem repository comprehensive and accurate:
 
 1. 🍴 **Fork** the repository.
-2. 📝 **Add or update** entries in `README.md` maintaining table formatting and star badges.
+2. 📝 **Add or update** entries in `README.md` maintaining table formatting and Stars_Badges.
 3. 🔍 **Provide factual details**: Include repository link, 1–2 sentence description, pricing/trial details, and licenses.
 4. 🚀 **Submit a Pull Request** with a brief explanation of your additions.
 
