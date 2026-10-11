@@ -1,174 +1,203 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Canvas Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19"/>
-      <stop offset="50%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#1e1035"/>
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1338"/>
     </linearGradient>
 
-    <!-- Text Gradient -->
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Header Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="40%" stop-color="#818cf8"/>
       <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
 
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <!-- Ambient Glowing Orbs (Using Radial Gradients instead of fragile filters) -->
+    <radialGradient id="ambientCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ambientPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <style>
-    /* CSS Animations for Dynamic Aspects */
-    @keyframes pulseNode {
-      0%, 100% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.08); opacity: 1; }
-    }
-
-    @keyframes flowLine {
-      0% { stroke-dashoffset: 100; }
+    /* Safe Cross-Browser CSS Animations (Sanitizer Friendly) */
+    @keyframes dashMove {
+      0% { stroke-dashoffset: 48; }
       100% { stroke-dashoffset: 0; }
     }
 
-    @keyframes floatCard {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-6px); }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 1; }
     }
 
-    @keyframes particleMove {
-      0% { transform: translate(0, 0); opacity: 0.3; }
-      50% { opacity: 0.8; }
-      100% { transform: translate(40px, -30px); opacity: 0.3; }
+    @keyframes floatSubtle {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 1; }
     }
 
-    .bg-grid {
-      stroke: rgba(255, 255, 255, 0.04);
+    .grid-line {
+      stroke: #334155;
       stroke-width: 1;
+      stroke-opacity: 0.15;
     }
 
-    .flow-line {
+    .flow-path {
+      fill: none;
       stroke: #6366f1;
       stroke-width: 2;
-      stroke-dasharray: 8 6;
-      animation: flowLine 15s linear infinite;
-      opacity: 0.5;
+      stroke-dasharray: 6 6;
+      stroke-opacity: 0.7;
+      animation: dashMove 4s linear infinite;
     }
 
-    .pulse-circle {
-      animation: pulseNode 3s ease-in-out infinite;
-      transform-origin: center;
+    .flow-path-cyan {
+      fill: none;
+      stroke: #0ea5e9;
+      stroke-width: 2;
+      stroke-dasharray: 6 6;
+      stroke-opacity: 0.7;
+      animation: dashMove 3.5s linear infinite reverse;
     }
 
-    .card-float-1 { animation: floatCard 4s ease-in-out infinite; transform-origin: center; }
-    .card-float-2 { animation: floatCard 5s ease-in-out infinite 1s; transform-origin: center; }
-    .card-float-3 { animation: floatCard 4.5s ease-in-out infinite 2s; transform-origin: center; }
+    .pulse-dot {
+      animation: pulseGlow 2.5s ease-in-out infinite;
+    }
 
-    .particle { animation: particleMove 6s ease-in-out infinite alternate; }
-
-    /* Foreground Elements - Ensured High Readability & Layer Priority */
-    .title-text {
+    .banner-title {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 800;
       font-size: 44px;
-      fill: url(#textGrad);
+      font-weight: 800;
+      fill: url(#titleGrad);
       letter-spacing: -0.5px;
     }
 
-    .subtitle-text {
+    .banner-subtitle {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 500;
       font-size: 17px;
-      fill: #e2e8f0;
-      letter-spacing: 0.2px;
+      font-weight: 400;
+      fill: #94a3b8;
     }
 
-    .badge-pill {
+    .badge-pill-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 11px;
+      font-weight: 700;
       fill: #38bdf8;
+      letter-spacing: 0.8px;
+    }
+
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      fill: #f8fafc;
+    }
+
+    .card-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      fill: #94a3b8;
     }
   </style>
 
-  <!-- Base Canvas Background -->
-  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)"/>
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- Background Animated Grid Pattern -->
-  <g class="bg-grid">
+  <!-- Subtle Blueprint Tech Grid -->
+  <g class="grid-line">
     <line x1="0" y1="60" x2="1200" y2="60"/>
     <line x1="0" y1="120" x2="1200" y2="120"/>
     <line x1="0" y1="180" x2="1200" y2="180"/>
     <line x1="0" y1="240" x2="1200" y2="240"/>
     <line x1="0" y1="300" x2="1200" y2="300"/>
     
-    <line x1="150" y1="0" x2="150" y2="380"/>
-    <line x1="300" y1="0" x2="300" y2="380"/>
-    <line x1="450" y1="0" x2="450" y2="380"/>
-    <line x1="600" y1="0" x2="600" y2="380"/>
-    <line x1="750" y1="0" x2="750" y2="380"/>
-    <line x1="900" y1="0" x2="900" y2="380"/>
-    <line x1="1050" y1="0" x2="1050" y2="380"/>
+    <line x1="120" y1="0" x2="120" y2="380"/>
+    <line x1="260" y1="0" x2="260" y2="380"/>
+    <line x1="400" y1="0" x2="400" y2="380"/>
+    <line x1="540" y1="0" x2="540" y2="380"/>
+    <line x1="680" y1="0" x2="680" y2="380"/>
+    <line x1="820" y1="0" x2="820" y2="380"/>
+    <line x1="960" y1="0" x2="960" y2="380"/>
+    <line x1="1100" y1="0" x2="1100" y2="380"/>
   </g>
 
-  <!-- Dynamic Glowing Background Orbs -->
-  <circle cx="1000" cy="90" r="140" fill="#6366f1" opacity="0.15" filter="url(#glow)"/>
-  <circle cx="200" cy="300" r="120" fill="#06b6d4" opacity="0.12" filter="url(#glow)"/>
+  <!-- Ambient Glowing Spheres (Sanitizer-Proof via Radial Gradients) -->
+  <circle cx="1020" cy="110" r="160" fill="url(#ambientPurple)"/>
+  <circle cx="160" cy="290" r="140" fill="url(#ambientCyan)"/>
 
-  <!-- Dynamic Flow Connections (Background Layer) -->
-  <path d="M 150 310 Q 300 270 450 310 T 750 310 T 1050 280" class="flow-line"/>
-  <path d="M 200 70 Q 500 40 850 70" class="flow-line" style="animation-duration: 20s; stroke: #38bdf8;"/>
+  <!-- Foreground Header Information (Guaranteed Clear & Unobstructed) -->
+  <g transform="translate(60, 52)">
+    <!-- Category Pill Badge -->
+    <rect width="255" height="28" rx="14" fill="#0f172a" stroke="#0284c7" stroke-width="1.2"/>
+    <circle cx="16" cy="14" r="4" fill="#38bdf8" class="pulse-dot"/>
+    <text x="28" y="18" class="badge-pill-text">REVOPS &amp; GTM ORCHESTRATION</text>
 
-  <!-- Floating Feature Cards (Middle Ground - Styled below text) -->
+    <!-- Main Title -->
+    <text x="0" y="78" class="banner-title">Awesome RevOps Workflow Orchestration</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="112" class="banner-subtitle">Curated Ecosystem of Revenue Operations Platforms, Data Synchronization &amp; Self-Hosted AI Engines</text>
+  </g>
+
+  <!-- Animated Data Flow Connections (strictly fill="none") -->
+  <g>
+    <!-- Line connecting Card 1 to Card 2 -->
+    <path d="M 280 305 L 440 305" class="flow-path-cyan"/>
+    <!-- Line connecting Card 2 to Card 3 -->
+    <path d="M 700 305 L 860 305" class="flow-path"/>
+  </g>
+
+  <!-- Bottom Architecture Cards (Arranged horizontally at y=270) -->
   <!-- Card 1: Lead Routing -->
-  <g class="card-float-1" transform="translate(60, 270)">
-    <rect width="180" height="65" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" opacity="0.9"/>
-    <circle cx="30" cy="32" r="12" fill="#0284c7" opacity="0.3"/>
-    <circle cx="30" cy="32" r="6" fill="#38bdf8" class="pulse-circle"/>
-    <text x="52" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Lead Routing</text>
-    <text x="52" y="46" font-family="sans-serif" font-size="11" fill="#94a3b8">Matching &amp; Assignment</text>
+  <g transform="translate(60, 270)">
+    <rect width="220" height="70" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1.5"/>
+    <!-- Icon Container -->
+    <rect x="14" y="16" width="38" height="38" rx="8" fill="#0369a1" fill-opacity="0.25"/>
+    <circle cx="33" cy="35" r="7" fill="#38bdf8" class="pulse-dot"/>
+    <!-- Card Text -->
+    <text x="64" y="32" class="card-title">Lead Routing Engine</text>
+    <text x="64" y="49" class="card-subtitle">Matching &amp; SLA Assignment</text>
   </g>
 
   <!-- Card 2: CRM Synchronization -->
-  <g class="card-float-2" transform="translate(480, 275)">
-    <rect width="210" height="65" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" opacity="0.9"/>
-    <circle cx="32" cy="32" r="12" fill="#4f46e5" opacity="0.3"/>
-    <circle cx="32" cy="32" r="6" fill="#818cf8" class="pulse-circle"/>
-    <text x="55" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Data Synchronization</text>
-    <text x="55" y="46" font-family="sans-serif" font-size="11" fill="#94a3b8">Multi-System Bi-Directional</text>
+  <g transform="translate(440, 270)">
+    <rect width="260" height="70" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1.5"/>
+    <!-- Icon Container -->
+    <rect x="14" y="16" width="38" height="38" rx="8" fill="#4338ca" fill-opacity="0.25"/>
+    <circle cx="33" cy="35" r="7" fill="#818cf8" class="pulse-dot"/>
+    <!-- Card Text -->
+    <text x="64" y="32" class="card-title">Data Synchronization</text>
+    <text x="64" y="49" class="card-subtitle">Bi-Directional Multi-System Sync</text>
   </g>
 
-  <!-- Card 3: Agentic GTM OS -->
-  <g class="card-float-3" transform="translate(930, 260)">
-    <rect width="210" height="65" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" opacity="0.9"/>
-    <circle cx="32" cy="32" r="12" fill="#9333ea" opacity="0.3"/>
-    <circle cx="32" cy="32" r="6" fill="#c084fc" class="pulse-circle"/>
-    <text x="55" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Agentic GTM OS</text>
-    <text x="55" y="46" font-family="sans-serif" font-size="11" fill="#94a3b8">Autonomous AI Workflows</text>
+  <!-- Card 3: Autonomous Agentic GTM OS -->
+  <g transform="translate(860, 270)">
+    <rect width="280" height="70" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1.5"/>
+    <!-- Icon Container -->
+    <rect x="14" y="16" width="38" height="38" rx="8" fill="#7e22ce" fill-opacity="0.25"/>
+    <circle cx="33" cy="35" r="7" fill="#c084fc" class="pulse-dot"/>
+    <!-- Card Text -->
+    <text x="64" y="32" class="card-title">Agentic GTM Operating System</text>
+    <text x="64" y="49" class="card-subtitle">Autonomous AI Deals &amp; RevOps</text>
   </g>
 
-  <!-- Ambient Floating Particles -->
-  <circle cx="280" cy="140" r="3" fill="#38bdf8" class="particle"/>
-  <circle cx="650" cy="110" r="4" fill="#818cf8" class="particle" style="animation-delay: 2s;"/>
-  <circle cx="920" cy="130" r="3" fill="#c084fc" class="particle" style="animation-delay: 4s;"/>
-
-  <!-- Foreground Header Banner Box (Ensures High Contrast & Readability) -->
-  <g transform="translate(60, 50)">
-    <!-- Category Pill Badge -->
-    <rect width="250" height="28" rx="14" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" opacity="0.95"/>
-    <text x="16" y="19" class="badge-pill">🚀 REVOPS &amp; GTM ORCHESTRATION</text>
-
-    <!-- Main Title -->
-    <text x="0" y="82" class="title-text" filter="url(#softGlow)">Awesome RevOps Workflow Orchestration</text>
-
-    <!-- Subtitle -->
-    <text x="0" y="118" class="subtitle-text">Curated Ecosystem of Revenue Operations Platforms, Data Synchronization &amp; Self-Hosted AI Engines</text>
-  </g>
+  <!-- Decorative Corner Accents -->
+  <circle cx="1140" cy="60" r="3" fill="#818cf8" class="pulse-dot"/>
+  <circle cx="1155" cy="75" r="2" fill="#c084fc" opacity="0.6"/>
+  <circle cx="1125" cy="80" r="2" fill="#38bdf8" opacity="0.6"/>
 </svg>
